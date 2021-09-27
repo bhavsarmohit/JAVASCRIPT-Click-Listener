@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Click Listener</h2>
+
+<p>Enter the Link Name in Input Field</p>
+<input type="text" placeholder="Type " id="inputId">
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", displayInfo);
+
+function displayInfo() {
+  // Selecting the input element and get its value 
+  let inputVal = document.getElementById("inputId").value;
+  // Displaying the value
+  alert("Clicked on '"+inputVal+"' by "+Date());
+  // document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+</body>
+</html> 
